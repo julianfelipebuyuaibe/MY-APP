@@ -1,0 +1,171 @@
+
+
+
+:root {
+    --colorTextos: #49454567;
+}
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/fondo1.png);
+	height: 70vh;
+	overflow: hidden;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.center{
+	width: 600px;
+
+	margin: 120px auto;
+	position: relative;
+}
+.center .header{
+	font-size: 28px;
+	font-weight: bold;
+    color: white;
+    text-align: center; 
+	padding: 20px 0 25px 20px;
+	background: transparent;
+	border-bottom: 1px solid #0f0e3f;
+	border-radius: 4px 4px 0 0;
+}
+.center form{
+	position: absolute;
+	background: transparent;
+	width: 100%;
+	padding: 40px 10px 0 30px;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	border-radius: 0 0 5px 5px;
+}
+form .grupo{
+    position: relative;
+    margin: 20px ;
+}
+input{
+    background: none;
+    color: gray;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+input:focus{ 
+    outline: none;
+    color: black;
+
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -20px;
+    font-size: 16px;
+    color: white;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #2196f3, #2196f3);
+    transition: 0.3s ease width;
+    left: 0;
+}
+input:focus~.barra::before{
+    width: 100%;
+}
+
+
+form input[type="password"]{
+	margin-top: 20px;
+}
+form i{
+	position: absolute;
+	font-size: 25px;
+	color: rgb(34, 124, 226);
+	margin: -38px 0 0  468px;
+}
+i.fa-lock{
+	margin-top: 20px;
+	position: absolute;
+	font-size: 25px;
+	color: rgb(236, 14, 14);
+	margin: -38px 0 0  468px;
+}
+.warnings{
+	width: 200px;
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding-top: 20px;
+	
+    
+}
+form button[type="submit"]{
+	width: 95%;
+	height: 50px;
+    background: #1F53C5;
+    border: none;
+    padding: 5px;
+    color: white;
+	margin: 10px 0;
+	
+    font-size: 18px;
+  }
+  form button[type="submit"]:hover{
+	background: #10a0da;
+    transition: .5s;
+}
+form a  input{
+    width: 95%;  
+    height: 50px;
+    padding: 1px;
+	background: #1F53C5;
+	color: white;
+    align-self: left ;
+    text-align: center;
+    font-size: 18px;
+     
+}
+form a  input:hover {
+	background: #10a0da;
+    transition: .5s;  
+}
+form p {
+    height: 50px;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+form a {
+    color: white;
+    text-decoration: none;
+}
+  
+form a :hover {
+	text-decoration: underline;  
+	
+}
